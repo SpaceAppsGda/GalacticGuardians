@@ -6,26 +6,29 @@ hi
 <?php 
 //Upload data into database table 'User'
 //Obtain variables from Register page
-$FirstName = $_POST["FirstName"];
+$FirstName = "asdasdasd prueba!!";
+$FirstName = !isset($_POST["FirstName"]);
 echo $FirstName;
-$LastName = $_POST["LastName"];
+$LastName = !isset($_POST["LastName"]);
 echo $LastName;
-$UserName = $_POST["UserName"];
+$UserName = !isset($_POST["UserName"]);
 echo $UserName;
-$Email = $_POST["Email"];
+$Email = !isset($_POST["Email"]);
 echo $Email;
-$Pass = $_POST["Pass"];
-echo $Pass;
-$Pass2 = $_POST["Pass2"];
-echo $Pass2;
-$Phone = $_POST["Phone"];
+$Pass = !isset($_POST["Pass"]);
+echo ($Pass);
+$Pass2 = !isset($_POST["Pass2"]);
+echo ($Pass2);
+$Phone = !isset($_POST["Phone"]);
 echo $Phone;
-$Country = $_POST["Country"];
+$Country = !isset($_POST["Country"]);
 echo $Country;
-$Occupation = $_POST["Occupation"];
+$Occupation = !isset($_POST["Occupation"]);
 echo $Occupation;
-$Organization = $_POST["Organization"];
+$Organization = !isset($_POST["Organization"]);
 echo $Organization;
+echo"LOL";
+echo $Occupation;
 
 if(Pass == Pass2){	//valida contraseña, se sean iguales
 	$Admin = mysqli_connect("10.43.7.44" , "GG" , "starlord" , "neo");
