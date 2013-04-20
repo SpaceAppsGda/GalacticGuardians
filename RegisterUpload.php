@@ -6,27 +6,27 @@
 //Upload data into database table 'User'
 //Obtain variables from Register page
 $FirstName = $_POST["FirstName"];
-echo ($FirstName);
+echo ($FirstName)."\n";
 $LastName = $_POST["LastName"];
-echo $LastName;
+echo $LastName."\n";
 $UserName = $_POST["UserName"];
-echo $UserName;
+echo $UserName."\n";
 $Email = $_POST["Email"];
-echo $Email;
+echo $Email."\n";
 $Pass = $_POST["Pass"];
-echo ($Pass);
+echo ($Pass)."\n";
 $Pass2 = $_POST["Pass2"];
-echo ($Pass2);
+echo ($Pass2)."\n";
 $Phone = $_POST["Phone"];
-echo $Phone;
+echo $Phone."\n";
 $Country = $_POST["Country"];
-echo $Country;
+echo $Country."\n";
 $Occupation = $_POST["Occupation"];
-echo ($Occupation);
+echo ($Occupation)."\n";
 $Organization = $_POST["Organization"];
-echo $Organization;
-echo ("LOL");
-echo $Occupation;
+echo $Organization."\n";
+echo ("LOL")."\n";
+echo $Occupation."\n";
 
 if($Pass == $Pass2)	//valida contraseña, se sean iguales
 {
