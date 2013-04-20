@@ -21,23 +21,37 @@
 					list: false
 				},
 				DateOfD: {
-					title: 'Time of Discovery',
-					type: 'date'
+					title: 'Time of Discovery'
 				
 				},
 				Place: {
-				    title: 'Place of Discovery',
+				    title: 'Place of Discovery'
 				},
 				Position: {
 					title: 'Position'
 				},
 				Magnitude: {
-                			title: 'Magnitude',
-        				width: '30%',
-        				type: 'date',
-        		            	create: false,
-   		                 	edit: false
+                			title: 'Magnitude'
                 		}
+				ObservationNo: {
+					title: 'Observation Number'
+				}
+				Arc:{
+				 	title:'Arc'
+				}
+				NominalH:{
+					title: 'Nominal H'
+				}
+				Orbital: {
+					title: 'Orbital'
+				}
+				ByUser: {
+					title: 'Uploaded by'
+				}
+				Grade: {
+					title: 'Grade'
+				}
+				
             		}
         		});
    		 });
