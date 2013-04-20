@@ -25,12 +25,17 @@ if(Pass == Pass2){	//valida contraseña, se sean iguales
 	else{
 		?>
 		<script language="javascript">
-		alert("DON'T Match the Passwords! Try Again!!");
+		alert("Dato eXistente");
 		</script>
-           <?php
+        <?php
 	}
 }
-
+else{
+	?>
+    <script language="javascript">
+	alert("DON'T Match the Passwords! Try Again!!");
+	</script>
+    <?php
 /*	if(){
 	
 	}
