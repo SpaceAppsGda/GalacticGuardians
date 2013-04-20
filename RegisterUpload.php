@@ -6,27 +6,26 @@ hi
 <?php 
 //Upload data into database table 'User'
 //Obtain variables from Register page
-echo"asdasd";
 $FirstName = $_POST["FirstName"];
-echo"Nombre";
+echo $FirstName;
 $LastName = $_POST["LastName"];
-echo"apellido";
+echo $LastName;
 $UserName = $_POST["UserName"];
-echo"use";
+echo $UserName;
 $Email = $_POST["Email"];
-echo"em";
+echo $Email;
 $Pass = $_POST["Pass"];
-echo"pas1";
+echo $Pass;
 $Pass2 = $_POST["Pass2"];
-echo"pas2";
+echo $Pass2;
 $Phone = $_POST["Phone"];
-echo"pho";
+echo $Phone;
 $Country = $_POST["Country"];
-echo"Coun";
+echo $Country;
 $Occupation = $_POST["Occupation"];
-echo"Occ";
+echo $Occupation;
 $Organization = $_POST["Organization"];
-echo"ORg";
+echo $Organization;
 
 if(Pass == Pass2){	//valida contraseña, se sean iguales
 	$Admin = mysqli_connect("10.43.7.44" , "GG" , "starlord" , "neo");
