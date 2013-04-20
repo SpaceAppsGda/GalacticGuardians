@@ -10,7 +10,7 @@
 	$Country=$_POST["Country"];
 	$Organization=$_POST["Occupation"];
 	$Organization=$_POST["Organization"];
-	
+	/*
 	if(Pass == Pass2){	//valida contraseña, se sean iguales
 		$Admin = mysqli_connect("10.43.7.44" , "GG" , "starlord" , "neo");
 		mysql_select_db("user", $Admin); 
@@ -30,7 +30,7 @@
             <?php
 		}
 	}
-
+*/
 /*	if(){
 	
 	}
