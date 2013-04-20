@@ -13,35 +13,44 @@
 			$('#NEOTableContainer').jtable({
 			    title: 'Table of NEOs',
 			    actions: {
-				listAction: '/GettingStarted/NEOList',
-				createAction: '/GettingStarted/AddNEO',
-				updateAction: '/GettingStarted/UpdateNEO',
-				deleteAction: '/GettingStarted/DeleteNEO'
+				listAction: '/GettingStarted/NEOList'
 			    },
 			    fields: {
 				NEOId: {
-				    key: true,
-				    list: false
+					key: true,
+					list: false
 				},
 				DateOfD: {
-				    title: 'Time of Discovery'
+					title: 'Time of Discovery',
+					type: 'date'
 				
 				},
 				Place: {
 				    title: 'Place of Discovery',
-				    width: '40%'
 				},
 				Position: {
-				    title: 'Position',
-				    width: '20%'
+					title: 'Position'
 				},
 				Magnitude: {
-                		    title: 'Record date',
-        		            width: '30%',
-        		            type: 'date',
-        		            create: false,
-   		                 edit: false
+                			title: 'Magnitude',
+        				width: '30%',
+        				type: 'date',
+        		            	create: false,
+   		                 	edit: false
                 		}
+				ObservationNo: {
+					title: 'Observation Number'
+				}
+				Arc:{
+				 	title:'Arc'
+				}
+				NominalH:{
+					title: 'Nominal H'
+				}
+				Orbital: {
+					title: 'Orbital'
+				}
+				
             		}
         		});
    		 });
