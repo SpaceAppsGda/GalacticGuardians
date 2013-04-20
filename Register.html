@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Log In &middot; Neobserver</title>
+    <title>Sign in &middot; Twitter Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -47,7 +46,7 @@
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="../GalacticGuardians/js/html5shiv.js"></script>
+      <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
@@ -60,16 +59,25 @@
 
   <body>
 
-    <div class="container">
+        <div class="container">
 
-      <form class="form-signin">
-        <h2 class="form-signin-heading">Please Log In</h2>
-        <input type="text" class="input-block-level" placeholder="Username">
-        <input type="password" class="input-block-level" placeholder="Password">
+      <form class="form-signin" action="RegisterUpload.php" id="Register" name="Register">
+        <h2 class="form-signin-heading">Please Sign Up</h2>
+        <input type="text" class="input-block-level" placeholder="Name" name="FirstName">
+        <input type="text" class="input-block-level" placeholder="Last Name" name="LastName">
+        <input type="text" class="input-block-level" placeholder="User Name" name="UserName">
+        <input type="text" class="input-block-level" placeholder="Email address" name="Email">
+        <input type="password" class="input-block-level" placeholder="New Password" name="Pass">
+        <input type="password" class="input-block-level" placeholder="Verify Password" name="Pass2">
+        <input type="text" class="input-block-level" placeholder="Phone" name="Phone">
+        <input type="text" class="input-block-level" placeholder="Country" name="Country">
+        <input type="text" class="input-block-level" placeholder="Ocupation" name="Occupation">
+        <input type="text" class="input-block-level" placeholder="Org." name="Organization">
+
         <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Remember me
+          <input type="checkbox" value="remember-me"> I'm agree with the Terms
         </label>
-        <button class="btn btn-large btn-primary" type="submit">Log In</button> <button class="btn btn-large btn-primary" type="submit">Register</button>
+        <button class="btn btn-large btn-primary" type="submit">Sign Up</button>
       </form>
 
     </div> <!-- /container -->
