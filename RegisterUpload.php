@@ -8,27 +8,27 @@ hi
 //Obtain variables from Register page
 $FirstName = "asdasdasd prueba!!";
 $FirstName = !isset($_POST["FirstName"]);
-echo $FirstName;
+echo $FirstName."\n";
 $LastName = !isset($_POST["LastName"]);
-echo $LastName;
+echo $LastName."\n";
 $UserName = !isset($_POST["UserName"]);
-echo $UserName;
+echo $UserName."\n";
 $Email = !isset($_POST["Email"]);
-echo $Email;
+echo $Email."\n";
 $Pass = !isset($_POST["Pass"]);
-echo ($Pass);
+echo ($Pass)."\n";
 $Pass2 = !isset($_POST["Pass2"]);
-echo ($Pass2);
+echo ($Pass2)."\n";
 $Phone = !isset($_POST["Phone"]);
-echo $Phone;
+echo $Phone."\n";
 $Country = !isset($_POST["Country"]);
-echo $Country;
+echo $Country."\n";
 $Occupation = !isset($_POST["Occupation"]);
-echo $Occupation;
+echo $Occupation."\n";
 $Organization = !isset($_POST["Organization"]);
-echo $Organization;
-echo"LOL";
-echo $Occupation;
+echo $Organization."\n";
+echo"LOL"."\n";
+echo $Occupation."\n";
 
 if(Pass == Pass2){	//valida contraseña, se sean iguales
 	$Admin = mysqli_connect("10.43.7.44" , "GG" , "starlord" , "neo");
