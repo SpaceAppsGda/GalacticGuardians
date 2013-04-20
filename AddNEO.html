@@ -113,7 +113,7 @@
         
                 <div class="tabbable"> <!-- Only required for left/right tabs -->
     				<ul class="nav nav-tabs">
-    					<li class="active"><a href="#tab1" data-toggle="tab">add NEO</a></li>
+    					<li class="active"><a href="#tab1" data-toggle="tab">Add NEO</a></li>
    						<li><a href="#tab2" data-toggle="tab">DataBase</a></li>
                         <li><a href="#tab3" data-toggle="tab">Glosary</a></li>
     				</ul>
@@ -155,7 +155,16 @@
     			<h3 id="myModalLabel">Add NEO</h3>
    		 	</div>
     	<div class="modal-body">
-    		<p>One fine body…</p>
+    		<form class="form-signin">
+       				<input type="text" class="input-block-level" placeholder="Date" name="Date">
+        			<input type="text" class="input-block-level" placeholder="Place of Discovery" name="PlaceOfDiscovery">
+        			<input type="text" class="input-block-level" placeholder="Magnitude" name="Magnitude">
+        			<input type="text" class="input-block-level" placeholder="Number of Observations" name="NoObservations">
+        			<input type="text" class="input-block-level" placeholder="Arc" name="Arc">
+        			<input type="text" class="input-block-level" placeholder="Orbital" name="Orbital">
+					<textarea type="text" class="input-block-level" rows="6" placeholder="Notes" name="Notes"></textarea>
+					
+      		</form>
     	</div>
     	
         	<div class="modal-footer">
