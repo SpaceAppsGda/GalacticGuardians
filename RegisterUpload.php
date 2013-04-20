@@ -7,15 +7,25 @@
 //Upload data into database table 'User'
 //Obtain variables from Register page
 $FirstName = $_POST["FirstName"];
+echo"Nombre";
 $LastName = $_POST["LastName"];
+echo"apellido";
 $UserName = $_POST["UserName"];
+echo"use";
 $Email = $_POST["Email"];
+echo"em";
 $Pass = $_POST["Pass"];
+echo"pas1";
 $Pass2 = $_POST["Pass2"];
+echo"pas2";
 $Phone = $_POST["Phone"];
+echo"pho";
 $Country = $_POST["Country"];
+echo"Coun";
 $Occupation = $_POST["Occupation"];
+echo"Occ";
 $Organization = $_POST["Organization"];
+echo"ORg";
 
 if(Pass == Pass2){	//valida contraseña, se sean iguales
 	$Admin = mysqli_connect("10.43.7.44" , "GG" , "starlord" , "neo");
