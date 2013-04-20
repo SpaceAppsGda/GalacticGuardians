@@ -1,5 +1,11 @@
-<?php //Upload data into database table 'User'
-	//Obtain variables from Register page
+<html>
+<head><title></title>
+</head>
+<body>
+
+<?php 
+//Upload data into database table 'User'
+//Obtain variables from Register page
 $FirstName=$_POST["FirstName"];
 $LastName=$_POST["LastName"];
 $UserName=$_POST["UserName"];
@@ -36,30 +42,7 @@ else{
 	alert("DON'T Match the Passwords! Try Again!!");
 	</script>
     <?php
-/*	if(){
-	
-	}
-	else{
-		//Go to index once the registration is successsful
-		header('Location: index.php');
-	}
-*/
+    }
 ?>
-<?php 
-$link = mysql_connect("localhost", "nobody"); 
-mysql_select_db("mydb", $link); 
-$result = mysql_query("SELECT nombre, email FROM agenda", $link); 
-if ($row = mysql_fetch_array($result)){ 
-   echo "<table border = '1'> \n"; 
-   echo "<tr><td>Nombre</td><td>E-Mail</td></tr> \n"; 
-   do { 
-      echo "<tr><td>".$row["nombre"]."</td><td>".$row["email"]."</td></tr> \n"; 
-   } while ($row = mysql_fetch_array($result)); 
-   echo "</table> \n"; 
-} else { 
-echo "¡ No se ha encontrado ningún registro !"; 
-} 
-?> 
-  
 </body> 
 </html>
