@@ -2,10 +2,11 @@
 <head><title></title>
 </head>
 <body>
-
+hi
 <?php 
 //Upload data into database table 'User'
 //Obtain variables from Register page
+echo"asdasd";
 $FirstName = $_POST["FirstName"];
 echo"Nombre";
 $LastName = $_POST["LastName"];
