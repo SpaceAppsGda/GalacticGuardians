@@ -120,7 +120,7 @@
     </div>
 
 	<div class="jumbotron">
-	<h1>Neobserver</h1>
+	<h2>Neobserver</h2>
 	</div>
     <div class="container">
 
