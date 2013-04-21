@@ -30,7 +30,9 @@ if(!isset($_POST['Terms'])){
 }
 $Admin = mysql_connect("10.43.7.44" , "GG" , "starlord") or die (mysql_error());
 mysql_select_db("neo");
+
 $tabla = mysql_query("SELECT * FROM user") or die (mysql_error());
+
 if($Pass == $Pass2 && !empty($Pass) && !empty($FirstName) && !empty($LastName) && !empty($UserName) && !empty($Email) && !empty($Phone) && !empty($Country) && !empty($Occupation) && !empty($Organization))	//valida contraseña, se sean iguales
 {
 

@@ -1,15 +1,11 @@
 <?php 
+//$SelectNeo = addslashes($_POST["Pass"]);
+$SelectNeo = 1;
 
 $Admin = mysql_connect("10.43.7.44" , "GG" , "starlord") or die (mysql_error());
-mysql_select_db("user");
-$tabla = mysql_query("SELECT UserName FROM user") or die (mysql_error());
-if ($_COOKIE["user"] == $tabla){
-	mysql_query("INSERT INTO user(UserName) 
-		VALUES (
-	$Admin);
-}
-
-
+mysql_select_db("neo");
+$IDneo = mysql_query("SELECT Rate FROM rating WHERE ObjectID = '".$SelectNeo."'");
+$Obj = mysql_fetch_array($IDneo);
 ?>	
 <!DOCTYPE html>
 <html lang="en">
@@ -77,23 +73,31 @@ if ($_COOKIE["user"] == $tabla){
       <form class="form-signin" method="post">
         <h2 class="form-signin-heading">Grade the NEO</h2>
         <select>
-          <option value="1">1 min</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="4">5 max</option>
-
+           <option> </option>
+          <option onMouseOut="<?php $voto="1" ?>">1 min</option>
+          <option onMouseOut="<?php $voto="2" ?>">2</option>
+          <option onMouseOut="<?php $voto="3" ?>">3</option>
+          <option onMouseOut="<?php $voto="4" ?>">4</option>
+          <option onMouseOut="<?php $voto="5" ?>">5 max</option>
+           <option> </option>
         </select> 
 
-        <button class="btn btn-large btn-primary" type="submit" name="submit">Submit</button>
-		<?php
-		include 'RegisterUpload.php';
+        <button class="btn btn-large btn-primary" type="submit" name="submit" onMouseOut="<?php
+		$prom = ($Obj[0] + $voto)/2;
+
+        mysql_query("UPDATE rating SET Rate ='".$prom."' WHERE ObjectID = '".$SelectNeo."'"); 
+		/*echo"<script>history.go(-1)</script>";*/
+		?>">Submit</button>
+<?php		echo $prom;
+		echo $Obj[0];
+		echo $voto;
 		?>
       </form>
 
     </div> <!-- /container -->
 
     <!-- Le javascript
+
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../GalacticGuardians/js/jquery.js"></script>
