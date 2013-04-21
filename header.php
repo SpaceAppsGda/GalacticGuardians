@@ -12,11 +12,11 @@
       <a class="brand" href="http://localhost/GalacticGuardians/index.php">NEObserver</a>
       <div class="nav-collapse collapse">
          <form method="post" class="navbar-form pull-right">
-              <?php 
-                if($session!=1){
+            <?php 
+            if($session!=1){
                 if (isset($_POST['submit'])) { 
 				  
-                  $ID = $_POST['ID'];
+                  $user = $_POST['User'];
                   $password = $_POST['password'];
                   $query = "select * from user where username='$user' and pass='$password'";
                   $result = mysql_query($query) or die ("Error in query: $query. " .mysql_error());
