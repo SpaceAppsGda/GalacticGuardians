@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="brand" href="http://localhost/GalacticGuardians/index.php"><img src="http://10.43.7.44/GalacticGuardians/img/Logo_mini.png"></a>
+      <a class="brand" href="http://localhost/GalacticGuardians/index.php"><img src="http://10.43.7.44/GalacticGuardians/img/NEOLogo.png"></a>
       <div class="nav-collapse collapse">
          <form method="post" class="navbar-form pull-right">
             <?php 
