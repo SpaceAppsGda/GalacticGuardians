@@ -85,21 +85,56 @@
               <li><a href="#tab1" data-toggle="tab">MyNeos</a>
               <li><a href="#tab2" data-toggle="tab">Following NEOS</a></li>
               <li><a href="#tab3" data-toggle="tab">Following Guardians</a></li>
-               <li><a href="#tab4" data-toggle="tab">Score</a></li>
+               <li><a href="#tab4" data-toggle="tab">My Scores</a></li>
 
             </ul>
             <div class="tab-content">
               <div class="tab-pane active" id="tab1">
-               <p>NEOS that I discovered</p>
+               <p>The NEOS that you discovered or reported.</p>
               </div>
               <div class="tab-pane" id="tab2">
-                <p>NEOS that im following </p>
+
+                <p><a href="#myModal" role="text" class="btn" data-toggle="modal">1</a>		         CMP		                  	17.6			           37	                		5		0.0510949		   2011-1-1		     	Anonymus</p>
+
+
+
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Grade this NEO</h3>
+  </div>
+  <div class="modal-body">
+    
+<form class="form-signin" method="post">
+        <select>
+          <option value="1">1 min</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="4">5 max</option>
+
+        </select> 
+
+
+
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary">Save changes</button>
+  </div>
+</div>
+
+<p>Thanks for voting!!</p>
+
+
+
               </div>
                         <div class="tab-pane" id="tab3">
-                <p>Guardians that i like</p>
+                <p>Here are the reports of the Guardians that you are following.</p>
               </div>
               <div class="tab-pane" id="tab4">
-                <p>The points I've earned</p>
+                <p>Here are the scores that you got for you discoveriers.</p>
               </div
 
             </div>
