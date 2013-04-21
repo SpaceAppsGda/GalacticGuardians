@@ -63,7 +63,7 @@
             </ul>
             <div class="tab-content">
               <div class="tab-pane active" id="tab1">
-               <p>The NEOS that you are discovered or reported.</p>
+               <p>The NEOS that you discovered or reported.</p>
               </div>
               <div class="tab-pane" id="tab2">
                 <p>Here are the NEOS you are following. </p>
