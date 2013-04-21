@@ -6,7 +6,7 @@ $database='neo';
 $db = mysql_connect($dbhost, $dbuser, $dbpassword) or die("Connection Error: " . mysql_error());
 mysql_select_db($database) or die("Error conecting to db.");
 //Get records from database
-$result = mysql_query("SELECT * FROM user;");
+$result = mysql_query("SELECT * FROM neo;");
  
 //Add all records to an array
 $rows = array();

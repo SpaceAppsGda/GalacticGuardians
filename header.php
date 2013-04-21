@@ -40,7 +40,7 @@
           </form>
           <ul class="nav">
               <li class="active"><a href="add">Add NEO</a></li>
-              <li class="active"><a href="Register.html">Register</a></li>
+              <li class="active"><a href="http://localhost/GalacticGuardians/register.php">Register</a></li>
           </ul>
       </div><!--/.nav-collapse -->
     </div>

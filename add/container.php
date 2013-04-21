@@ -34,8 +34,8 @@
     <div class="tabbable"> <!-- Only required for left/right tabs -->
   		<ul class="nav nav-tabs">
   		    <li class="active"><a href="#tab1" data-toggle="tab">Add NEO</a></li>
-  		    <li><a href="#tab2" data-toggle="tab">DataBase</a></li>
-            <li><a href="#tab3" data-toggle="tab">Glosary</a></li>
+  		    <li><a href="#tab2" data-toggle="tab">Top 10</a></li>
+            <li><a href="#tab3" data-toggle="tab">Database</a></li>
     	</ul>
 	<div class="tab-content">
 		<div class="tab-pane active" id="tab1">
@@ -84,10 +84,10 @@
             </div>
         </div>
     	<div class="tab-pane" id="tab2">
-            Hola
+        <?php include '../home.php' ?>
     	</div>
         <div class="tab-pane" id="tab3">
-    	   <?php include 'home.php'; ?>
+    	   <?php include 'tabla.php' ?>
     	</div>
     </div>
 </div>
