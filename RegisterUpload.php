@@ -5,16 +5,16 @@
 <?php 
 //Upload data into database table 'User'
 //Obtain variables from Register page
-$FirstName = $_POST["FirstName"];
-$LastName = $_POST["LastName"];
-$UserName = $_POST["UserName"];
-$Email = $_POST["Email"];
-$Pass = $_POST["Pass"];
-$Pass2 = $_POST["Pass2"];
-$Phone = $_POST["Phone"];
-$Country = $_POST["Country"];
-$Occupation = $_POST["Occupation"];
-$Organization = $_POST["Organization"];
+$FirstName = addslashes($_POST["FirstName"]);
+$LastName = addslashes($_POST["LastName"]);
+$UserName = addslashes($_POST["UserName"]);
+$Email = addslashes($_POST["Email"]);
+$Pass = addslashes($_POST["Pass"]);
+$Pass2 = addslashes($_POST["Pass2"]);
+$Phone = addslashes($_POST["Phone"]);
+$Country = addslashes($_POST["Country"]);
+$Occupation = addslashes($_POST["Occupation"]);
+$Organization = addslashes($_POST["Organization"]);
 
 echo $FirstName."<br>";
 echo $LastName."<br>";
