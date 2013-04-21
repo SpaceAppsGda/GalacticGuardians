@@ -26,7 +26,7 @@ echo $Country."<br>";
 echo $Occupation."<br>";
 echo $Organization."<br>";
 
-if($Pass == $Pass2 && !is_null($Pass) && !is_null($FirstName) && !is_null($LastName) && !is_null($UserName) && !is_null($Email) && !is_null($Phone) && !is_null($Country) && !is_null($Occupation) && !is_null($Organization))	//valida contraseña, se sean iguales
+if($Pass == $Pass2 && !empty($Pass) && !empty($FirstName) && !empty($LastName) && !empty($UserName) && !empty($Email) && !empty($Phone) && !empty($Country) && !empty($Occupation) && !empty($Organization))	//valida contraseña, se sean iguales
 {
 	$Admin = mysql_connect("10.43.7.44" , "GG" , "starlord");
 	$bdNEO = mysql_select_db("neo",$Admin);
@@ -40,7 +40,7 @@ if($Pass == $Pass2 && !is_null($Pass) && !is_null($FirstName) && !is_null($LastN
 		}
 		else{
 			function error(){
-				echo "<script>alert('Existing Data! try again with other Username/Mail')</script>";
+				echo "<script>alert('Username/Mail already in use. Try again with other Username/Mail')</script>";
 				echo"<script>history.go(-1)</script>";
 			}
 			$Finaliza = "no";
@@ -49,7 +49,7 @@ if($Pass == $Pass2 && !is_null($Pass) && !is_null($FirstName) && !is_null($LastN
 	}
 	
 	if($Finaliza == "si"){
-		mysql_query("INSERT INTO user(UserName, FirstName, LastName, Email, Pass, Phone, Country, Occupation, Organization) 
+		/*mysql_query("INSERT INTO user(UserName, FirstName, LastName, Email, Pass, Phone, Country, Occupation, Organization) 
 		VALUES (
 		'{$_POST["UserName"]}',
 		'{$_POST["FirstName"]}',
@@ -60,12 +60,12 @@ if($Pass == $Pass2 && !is_null($Pass) && !is_null($FirstName) && !is_null($LastN
 		'{$_POST["Country"]}',
 		'{$_POST["Occupation"]}',
 		'{$_POST["Organization"]}')",
-		$Admin);
+		$Admin);*/
 		echo "<script>alert('Registration Successful!')</script>";
 		header("Location:index.php");
 	}
 	else{
-		echo "<script>alert('PassWord/Username it is on Use!')</script>";
+		echo "<script>alert('Mail/Username is on Use!')</script>";
 		echo"<script>history.go(-1)</script>";
 	}
 }
@@ -74,7 +74,7 @@ else if($Pass != $Pass2){
 	echo"<script>history.go(-1)</script>";
 }
 else{
-	echo "<script>alert('Fill all the Spaces Pleas!')</script>";
+	echo "<script>alert('Fill all the blank spaces please')</script>";
 	echo"<script>history.go(-1)</script>";
 }
 ?>
