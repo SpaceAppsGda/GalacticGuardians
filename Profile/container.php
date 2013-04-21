@@ -38,7 +38,11 @@
       <div class="span4">...</div>
      <div class="span2 offset2">
      <div class="row">
-     <div class="text-right"><br/><br/><?php echo $_SESSION["ID"]?><br/>"Guardian of the galaxy" <br/> progreso 250/300</div>
+	 <?php 
+		$USERquery=mysql_query("SELECT UserName FROM user WHERE ID=$_SESSION["ID"]") or die (mysql_error());
+		$USER=mysql_fetch_array($USERquery);
+	?>
+     <div class="text-right"><br/><br/><?php echo USER[0]?><br/>"Guardian of the galaxy" <br/> progreso 250/300</div>
      <div class="progress progress-striped">
        <div class="bar" style="width: 80%;"></div>
      </div>

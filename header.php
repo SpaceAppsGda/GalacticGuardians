@@ -15,12 +15,13 @@
               <?php 
                 if($session!=1){
                 if (isset($_POST['submit'])) { 
-                  $user = $_POST['user'];
+				  
+                  $ID = $_POST['ID'];
                   $password = $_POST['password'];
                   $query = "select * from user where username='$user' and pass='$password'";
                   $result = mysql_query($query) or die ("Error in query: $query. " .mysql_error());
                   if (mysql_num_rows($result)==1) {
-                    header('Location: index.php?session=1&user='.$user);
+                    header('Location: index.php?session=1&ID='.$ID);
                   }
                   else{
                     echo '<font color="red">Could not log you in.</font>';
