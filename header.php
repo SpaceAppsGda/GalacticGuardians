@@ -35,7 +35,7 @@
             }
             else {
               
-              print '<p>Hola! <a href="http://localhost/GalacticGuardians/profile/index.php?session=1&user='.$user.'/></a> <a href="index.php?session=0">Logout</a></p>';
+              print '<p>Hola <a href="http://localhost/GalacticGuardians/profile/index.php?session=1&user='.$user.'"/>'.$user.'</a> <a href="index.php?session=0">Logout</a></p>';
             }
 
             ?>

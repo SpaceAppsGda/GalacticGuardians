@@ -1,5 +1,9 @@
+<?php
+  include 'connect.php';
+  $session=$_GET['session'];
+  $user=$_GET['user'];
+?>
 <!DOCTYPE html>
-<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>NASA &middot; Neobserver</title>
@@ -9,7 +13,18 @@
 
     <!-- Le styles -->
     <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet">-->
+   
+    <link href="../Scripts/jtable/themes/lightcolor/gray/jtable.css" rel="stylesheet" type="text/css" />
+
+    <script src="../js/jquery.js" type="text/javascript"></script>
+    <script src="../scripts/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jtable/jquery.jtable.js" type="text/javascript"></script>
+    <style type="text/css">
+    table {
+    font-size: 90%;
+    }
+    </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -37,7 +52,5 @@
       include '../footer.php';
     ?>
     </div> 
-    <script src="../js/jquery.js"></script>
-    <script src="../js/bootstrap.js"></script>
   </body>
 </html>
