@@ -15,6 +15,7 @@ $Phone = $_POST["Phone"];
 $Country = $_POST["Country"];
 $Occupation = $_POST["Occupation"];
 $Organization = $_POST["Organization"];
+
 echo $FirstName."<br>";
 echo $LastName."<br>";
 echo $UserName."<br>";
