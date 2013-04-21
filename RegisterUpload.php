@@ -6,32 +6,30 @@
 //Upload data into database table 'User'
 //Obtain variables from Register page
 $FirstName = $_POST["FirstName"];
-echo ($FirstName);
 $LastName = $_POST["LastName"];
-echo $LastName."\n";
 $UserName = $_POST["UserName"];
-echo $UserName."\n";
 $Email = $_POST["Email"];
-echo $Email."\n";
 $Pass = $_POST["Pass"];
-echo ($Pass)."\n";
 $Pass2 = $_POST["Pass2"];
-echo ($Pass2)."\n";
 $Phone = $_POST["Phone"];
-echo $Phone."\n";
 $Country = $_POST["Country"];
-echo $Country."\n";
 $Occupation = $_POST["Occupation"];
-echo ($Occupation)."\n";
 $Organization = $_POST["Organization"];
-echo $Organization."\n";
-echo ("LOL")."\n";
-echo $Occupation."\n";
+echo $FirstName;
+echo $LastName;
+echo $UserName;
+echo $Email;
+echo $Pass;
+echo $Pass2;
+echo $Phone;
+echo $Country;
+echo ($Occupation);
+echo $Organization;
 
 if($Pass == $Pass2)	//valida contraseña, se sean iguales
 {
 	$Admin = mysql_connect("10.43.7.44" , "GG" , "starlord");
-	$bdNEO = mysql_select_db("neo",$Admin)
+	$bdNEO = mysql_select_db("neo",$Admin);
 	$tabla = mysql_query("SELECT * FROM user");
 	
 	while($row=mysql_fetch_array($tabla)){
