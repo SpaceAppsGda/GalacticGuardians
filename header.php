@@ -16,12 +16,13 @@
             if($session!=1){
                 if (isset($_POST['submit'])) { 
 				  
-                  $user = $_POST['User'];
+                  $user = $_POST['user'];
                   $password = $_POST['password'];
                   $query = "select * from user where username='$user' and pass='$password'";
+                  echo $query;
                   $result = mysql_query($query) or die ("Error in query: $query. " .mysql_error());
                   if (mysql_num_rows($result)==1) {
-                    header('Location: index.php?session=1&ID='.$ID);
+                    header('Location: index.php?session=1&user='.$user);
                   }
                   else{
                     echo '<font color="red">Could not log you in.</font>';
@@ -34,14 +35,14 @@
             }
             else {
               
-              print '<p>Hola! <a href="profile">'.$user.'</a> <a href="index.php?session=0">Logout</a></p>';
+              print '<p>Hola! <a href="http://localhost/GalacticGuardians/profile/index.php?session=1&user='.$user.'/></a> <a href="index.php?session=0">Logout</a></p>';
             }
 
             ?>
           </form>
           <ul class="nav">
-              <li class="active"><a href="add">Add NEO</a></li>
-              <li class="active"><a href="http://localhost/GalacticGuardians/register.php">Register</a></li>
+              <li class="active"><a href=<?php print "http://localhost/GalacticGuardians/add/index.php?session=".$session."&user=".$user;?>>Add NEO</a></li>
+              <li class="active"><a href= "http://localhost/GalacticGuardians/register.php">Register</a></li>
           </ul>
       </div><!--/.nav-collapse -->
     </div>
