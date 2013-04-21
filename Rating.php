@@ -83,13 +83,10 @@ $Obj = mysql_fetch_array($IDneo);
         </select> 
 
         <button class="btn btn-large btn-primary" type="submit" name="submit" onMouseOut="<?php
-		$prom = ($Obj[0] + $voto)/2;
-
-        mysql_query("UPDATE rating SET Rate ='".$prom."' WHERE ObjectID = '".$SelectNeo."'"); 
+        mysql_query("UPDATE rating SET Rate ='".$voto."' WHERE ObjectID = '".$SelectNeo."' AND UserName='".$user"'"); 
 		/*echo"<script>history.go(-1)</script>";*/
 		?>">Submit</button>
-<?php		echo $prom;
-		echo $Obj[0];
+		<?php
 		echo $voto;
 		?>
       </form>
