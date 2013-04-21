@@ -24,7 +24,13 @@ $Obj = mysql_fetch_array($IDneo);
           padding-top: 40px;
           padding-bottom: 40px;
           background-color: #f5f5f5;
+		  margin:0;
+	      padding:0;
+    	  height:100%;
         }
+		countent{
+		 padding-bottom:100px;
+		}
 
         .form-signin {
           max-width: 300px;
@@ -118,11 +124,11 @@ $Obj = mysql_fetch_array($IDneo);
 <form class="form-signin" method="post">
         <select>
            <option> </option>
-          <option onMouseOut="<?php $voto="1" ?>">1 min</option>
-          <option onMouseOut="<?php $voto="2" ?>">2</option>
-          <option onMouseOut="<?php $voto="3" ?>">3</option>
-          <option onMouseOut="<?php $voto="4" ?>">4</option>
-          <option onMouseOut="<?php $voto="5" ?>">5 max</option>
+          <option onMouseOut="<?php $voto="1" ?>1 min</option>
+          <option onMouseOut="<?php $voto="2" ?>2</option>
+          <option onMouseOut="<?php $voto="3" ?>3</option>
+          <option onMouseOut="<?php $voto="4" ?>4</option>
+          <option onMouseOut="<?php $voto="5" ?>5 max</option>
            <option> </option>
         </select> 
 
