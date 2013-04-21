@@ -36,16 +36,23 @@ if($Pass == $Pass2)	//valida contraseña, se sean iguales
 		if ($row[1] != $UserName and $row[4] != $Email)
 		{
 			echo(".");
+			$Terminar = true;
 
 		}
 		else{
 			echo "Existing Data";
+			$Terminar = false;
 			break;
 		}
 	}
-	echo "Registration Successful";
-	$NuevoUsuario = mysql_query("INSERT INTO user(UserName,FirstName,LastName,Email,Pass,Phone,Country,Occupation,Organization) VALUES ($UserName,$FirstName,$LastName,$Email,$Pass,$Phone,$Country,$Occupation,$Organization)", $Admin); 		
-	header("Location:index.php");
+	if ($Terminar == true){
+		echo "Registration Successful";
+		$NuevoUsuario = mysql_query("INSERT INTO user(UserName,FirstName,LastName,Email,Pass,Phone,Country,Occupation,Organization) VALUES ($UserName,$FirstName,$LastName,$Email,$Pass,$Phone,$Country,$Occupation,$Organization)", $Admin);
+		header("Location:index.php");
+	}
+	else if ($Terminar == false){
+		history.back();
+	}
 }
 else{
     echo "Passwords didn't match";
