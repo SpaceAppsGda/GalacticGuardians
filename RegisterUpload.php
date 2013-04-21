@@ -40,7 +40,8 @@ if($Pass == $Pass2 && !is_null($Pass) && !is_null($FirstName) && !is_null($LastN
 		}
 		else{
 			function error(){
-				echo'Alert("Existing Data! try again with other Username/Mail")';
+				echo "<script>alert('Existing Data! try again with other Username/Mail')</script>";
+				echo"<script>history.go(-1)</script>";
 			}
 			$Finaliza = "no";
 			break;
@@ -60,20 +61,23 @@ if($Pass == $Pass2 && !is_null($Pass) && !is_null($FirstName) && !is_null($LastN
 		'{$_POST["Occupation"]}',
 		'{$_POST["Organization"]}')",
 		$Admin);
+		echo "<script>alert('Registration Successful!')</script>";
 		header("Location:index.php");
-		function Error(){echo'Alert("Registration Successful!")';}
 	}
 	else{
-		function Error(){echo 'Alert("PassWord/Username it is on Use!")';}
+		echo "<script>alert('PassWord/Username it is on Use!')</script>";
+		echo"<script>history.go(-1)</script>";
 	}
 }
 else if($Pass != $Pass2){
-	
-	function Error(){echo 'Alert("Passwords did not match")';}
+	echo "<script>alert('Passwords did not match')</script>";
+	echo"<script>history.go(-1)</script>";
 }
 else{
-	function Error(){echo 'Alert("Fill all the Spaces Pleas!")';}
+	echo "<script>alert('Fill all the Spaces Pleas!')</script>";
+	echo"<script>history.go(-1)</script>";
 }
 ?>
+
 </body> 
 </html>
