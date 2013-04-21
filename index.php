@@ -1,3 +1,8 @@
+<?php
+  include 'connect.php';
+  $session=$_GET['session'];
+  $ID=$_GET['ID'];
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

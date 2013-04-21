@@ -1,50 +1,50 @@
-1,CMP,null,17.6,37,5,0.0510949,2011-01-01,null,Anonymus
-2,CMP,null,17.3,44,5,0.1741322,2009-01-01,null,Anonymus
-3,CMP,null,18,43,5,0.2131382,2006-01-01,null,Anonymus
-4,CMP,null,15.8,42,5,0.0503523,2000-01-01,null,Anonymus
-5,CMP,null,17.3,75,7,0.0875749,2008-01-01,null,Anonymus
-6,CMP,null,16.7,70,5,0.2133239,1993-01-01,null,Anonymus
-7,CMP,null,17.6,42,7,0.1477076,2007-01-01,null,Anonymus
-8,CMP,null,17.3,49,9,0.1369263,2002-01-01,null,Anonymus
-9,CMP,null,17.4,53,7,0.1679933,2004-01-01,null,Anonymus
-10,CMP,null,16.1,67,5,0.3091895,2010-01-01,null,Anonymus
-11,MP_Atens,Catalina Sky Survey,25.2,null,1,0.323,2013-04-11,null,Catalina Sky Survey
-12,MP_Atens,Mt.Lemmon Survey,23.7,null,6,0.321,2013-04-07,null,Mt.Lemmon Survey
-13,MP_Atens,Pan-Starrs,25.7,null,11,0.241,2013-03-19,null,Pan-Starrs
-14,MP_Atens,Spacewatch,22.9,null,31,0.403,2013-03-18,null,Spacewatch
-15,MP_Atens,Linear,23.9,null,12,0.818,2012-11-19,null,Linear
-16,MP_Atens,Mt.Lemmon Survey,25.5,null,27,0.145,2012-11-17,null,Mt.Lemmon Survey
-17,MP_Atens,Pan-Starrs,25.6,null,2,0.254,2012-11-05,null,Pan-Starrs
-18,MP_Atens,Linear,24.5,null,25,0.222,2012-10-25,null,Linear
-19,MP_Atens,Mt.Lemmon Survey,25,null,6,0.326,2012-10-16,null,Mt.Lemmon Survey
-20,MP_Atens,Catalina Sky Survey,24.1,null,2,0.109,2012-06-23,null,Catalina Sky Survey
-21,MP_Apollo,Pan-Starrs ,23.7,null,1,0.678,2013-04-16,null,Pan-Starrs 
-22,MP_Apollo,Catalina Sky Survey,22,null,2,0.677,2013-04-16,null,Catalina Sky Survey
-23,MP_Apollo,Catalina Sky Survey,26,null,2,0.032,2013-02-16,null,Catalina Sky Survey
-24,MP_Apollo,Siding spring Survey,23.8,null,7,0.428,2013-04-12,null,Siding spring Survey
-25,MP_Apollo,Pan-Starrs ,19.5,null,8,0.499,2013-04-10,null,Pan-Starrs 
-26,MP_Apollo,Spacewatch,18.9,null,9,0.868,2013-04-11,null,Spacewatch
-27,MP_Apollo,Mt.Lemmon Survey,24.4,null,21,0.421,2013-01-22,null,Mt.Lemmon Survey
-28,MP_Apollo,Siding spring Survey,21.3,null,47,0.308,2013-11-19,null,Siding spring Survey
-29,MP_Apollo,Mt.Lemmon Survey,25.2,null,7,0.432,2012-11-17,null,Mt.Lemmon Survey
-30,MP_Apollo,Catalina Sky Survey,26,null,23,0.279,2012-11-20,null,Catalina Sky Survey
-31,MP_Amors,Catalina Sky Survey,24.9,null,4,0.126,2013-04-12,null,Catalina Sky Survey
-32,MP_Amor,Spacewatch,21.3,null,5,0.402,2013-02-13,null,Spacewatch
-33,MP_Amors,Mt.Lemmon Survey,23.1,null,7,0.512,2013-02-11,null,Mt.Lemmon Survey
-34,MP_Amors,Pan-Starrs,21.1,null,10,0.538,2013-04-09,null,Pan-Starrs
-35,MP_Amors,Mt.Lemmon Survey,22.3,null,4,0.313,2013-03-18,null,Mt.Lemmon Survey
-36,MP_Amors,Linear,19.6,null,2,0.322,2008-02-09,null,Linear
-37,MP_Amors,Catalina Sky Survey,22.2,null,2,0.322,2008-02-09,null,Catalina Sky Survey
-38,MP_Amors,Mt.Lemmon Survey,22.8,null,29,0.559,2008-02-02,null,Mt.Lemmon Survey
-39,MP_Amors,Siding Spring Survey,18.1,null,3,0.763,2007-06-09,null,Siding Spring Survey
-40,MP_Amors,Catalina Sky Survey,20,null,32,0.534,2007-03-19,null,Catalina Sky Survey
-41,Comet,Hale-Bopp,23.4,null,null,null,2010-12-04,null,Hale-Bopp
-42,Comet,Lagerkvist,null,null,null,null,1997-01-12,null,Lagerkvist
-43,Comet,Lagerkvist-Carsenty,19.4,null,null,null,1999-02-13,null,Lagerkvist-Carsenty
-44,Comet, Jager,null,null,null,null,1999-05-11,null, Jager
-45,Comet,LINEAR,19.1,null,null,null,1999-01-14,null,LINEAR
-46,Comet,Lemmon,19.6,null,null,null,2009-13-06,null,Lemmon
-47,Comet,Boattini,17.1,null,null,null,2013-01-13,null,Boattini
-48,Comet,LINEAR,19.8,null,null,null,2010-04-17,null,LINEAR
-49,Comet,La Sagra,23.6,null,null,null,2011-08-29,null,La Sagra
-50,Comet,LINEAR,19.0,null,null,null,2011-04-21,null,LINEAR
+1,CMP,,17.6,37,5,0.0510949,2011-01-01,null,Anonymus
+2,CMP,,17.3,44,5,0.1741322,2009-01-01,null,Anonymus
+3,CMP,,18,43,5,0.2131382,2006-01-01,null,Anonymus
+4,CMP,,15.8,42,5,0.0503523,2000-01-01,null,Anonymus
+5,CMP,,17.3,75,7,0.0875749,2008-01-01,null,Anonymus
+6,CMP,,16.7,70,5,0.2133239,1993-01-01,null,Anonymus
+7,CMP,,17.6,42,7,0.1477076,2007-01-01,null,Anonymus
+8,CMP,,17.3,49,9,0.1369263,2002-01-01,null,Anonymus
+9,CMP,,17.4,53,7,0.1679933,2004-01-01,null,Anonymus
+10,CMP,,16.1,67,5,0.3091895,2010-01-01,null,Anonymus
+11,MP_Atens,Catalina Sky Survey,25.2,,1,0.323,2013-04-11,null,Catalina Sky Survey
+12,MP_Atens,Mt.Lemmon Survey,23.7,,6,0.321,2013-04-07,null,Mt.Lemmon Survey
+13,MP_Atens,Pan-Starrs,25.7,,11,0.241,2013-03-19,null,Pan-Starrs
+14,MP_Atens,Spacewatch,22.9,,31,0.403,2013-03-18,null,Spacewatch
+15,MP_Atens,Linear,23.9,,12,0.818,2012-11-19,null,Linear
+16,MP_Atens,Mt.Lemmon Survey,25.5,,27,0.145,2012-11-17,null,Mt.Lemmon Survey
+17,MP_Atens,Pan-Starrs,25.6,,2,0.254,2012-11-05,null,Pan-Starrs
+18,MP_Atens,Linear,24.5,,25,0.222,2012-10-25,null,Linear
+19,MP_Atens,Mt.Lemmon Survey,25,,6,0.326,2012-10-16,null,Mt.Lemmon Survey
+20,MP_Atens,Catalina Sky Survey,24.1,,2,0.109,2012-06-23,null,Catalina Sky Survey
+21,MP_Apollo,Pan-Starrs ,23.7,,1,0.678,2013-04-16,null,Pan-Starrs 
+22,MP_Apollo,Catalina Sky Survey,22,,2,0.677,2013-04-16,null,Catalina Sky Survey
+23,MP_Apollo,Catalina Sky Survey,26,,2,0.032,2013-02-16,null,Catalina Sky Survey
+24,MP_Apollo,Siding spring Survey,23.8,,7,0.428,2013-04-12,null,Siding spring Survey
+25,MP_Apollo,Pan-Starrs ,19.5,,8,0.499,2013-04-10,null,Pan-Starrs 
+26,MP_Apollo,Spacewatch,18.9,,9,0.868,2013-04-11,null,Spacewatch
+27,MP_Apollo,Mt.Lemmon Survey,24.4,,21,0.421,2013-01-22,null,Mt.Lemmon Survey
+28,MP_Apollo,Siding spring Survey,21.3,,47,0.308,2013-11-19,null,Siding spring Survey
+29,MP_Apollo,Mt.Lemmon Survey,25.2,,7,0.432,2012-11-17,null,Mt.Lemmon Survey
+30,MP_Apollo,Catalina Sky Survey,26,,23,0.279,2012-11-20,null,Catalina Sky Survey
+31,MP_Amors,Catalina Sky Survey,24.9,,4,0.126,2013-04-12,null,Catalina Sky Survey
+32,MP_Amors,Spacewatch,21.3,,5,0.402,2013-02-13,null,Spacewatch
+33,MP_Amors,Mt.Lemmon Survey,23.1,,7,0.512,2013-02-11,null,Mt.Lemmon Survey
+34,MP_Amors,Pan-Starrs,21.1,,10,0.538,2013-04-09,null,Pan-Starrs
+35,MP_Amors,Mt.Lemmon Survey,22.3,,4,0.313,2013-03-18,null,Mt.Lemmon Survey
+36,MP_Amors,Linear,19.6,,2,0.322,2008-02-09,null,Linear
+37,MP_Amors,Catalina Sky Survey,22.2,,2,0.322,2008-02-09,null,Catalina Sky Survey
+38,MP_Amors,Mt.Lemmon Survey,22.8,,29,0.559,2008-02-02,null,Mt.Lemmon Survey
+39,MP_Amors,Siding Spring Survey,18.1,,3,0.763,2007-06-09,null,Siding Spring Survey
+40,MP_Amors,Catalina Sky Survey,20,,32,0.534,2007-03-19,null,Catalina Sky Survey
+41,Comet,Hale-Bopp,23.4,,,,2010-12-04,null,Hale-Bopp
+42,Comet,Lagerkvist,,,,,1997-01-12,null,Lagerkvist
+43,Comet,Lagerkvist-Carsenty,19.4,,,,1999-02-13,null,Lagerkvist-Carsenty
+44,Comet, Jager,,,,,1999-05-11,null, Jager
+45,Comet,LINEAR,19.1,,,,1999-01-14,null,LINEAR
+46,Comet,Lemmon,19.6,,,,2009-06-13,null,Lemmon
+47,Comet,Boattini,17.1,,,,2013-01-13,null,Boattini
+48,Comet,LINEAR,19.8,,,,2010-04-17,null,LINEAR
+49,Comet,La Sagra,23.6,,,,2011-08-29,null,La Sagra
+50,Comet,LINEAR,19,,,,2011-04-21,null,LINEAR

@@ -32,24 +32,13 @@
         }
 
       </style>
-
-
-
-
-
-
-
-
-
-
-
 <div class="container">
        <div class="row">
             <div class="span1"><i class="icon-search icon-envelope"></i></div>
       <div class="span4">...</div>
      <div class="span2 offset2">
      <div class="row">
-     <div class="text-right"><br/><br/>Drax The Destroyer<br/>"Guardian of the galaxy" <br/> progreso 250/300</div>
+     <div class="text-right"><br/><br/><?php echo $_SESSION["ID"]?><br/>"Guardian of the galaxy" <br/> progreso 250/300</div>
      <div class="progress progress-striped">
        <div class="bar" style="width: 80%;"></div>
      </div>

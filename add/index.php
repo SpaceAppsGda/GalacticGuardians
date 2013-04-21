@@ -30,8 +30,8 @@
     ?>
     <div class="container">
       <?php
-      include 'container.php';
-    ?>
+        include 'container.php';
+      ?>
     
     <?php
       include '../footer.php';
