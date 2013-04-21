@@ -24,9 +24,13 @@ echo $Country."<br>";
 echo $Occupation."<br>";
 echo $Organization."<br>";
 */
-	$Admin = mysql_connect("10.43.7.44" , "GG" , "starlord") or die (mysql_error());
-	mysql_select_db("neo");
-	$tabla = mysql_query("SELECT * FROM user") or die (mysql_error());
+if(!isset($_POST['Terms'])){
+	echo"<script>alert('Please!! Accept the terms!!')</script>";
+	echo"<script>history.go(-1)</script>";
+}
+$Admin = mysql_connect("10.43.7.44" , "GG" , "starlord") or die (mysql_error());
+mysql_select_db("neo");
+$tabla = mysql_query("SELECT * FROM user") or die (mysql_error());
 if($Pass == $Pass2 && !empty($Pass) && !empty($FirstName) && !empty($LastName) && !empty($UserName) && !empty($Email) && !empty($Phone) && !empty($Country) && !empty($Occupation) && !empty($Organization))	//valida contraseña, se sean iguales
 {
 
@@ -34,13 +38,13 @@ if($Pass == $Pass2 && !empty($Pass) && !empty($FirstName) && !empty($LastName) &
 	while($row=mysql_fetch_array($tabla)){
 		if ($row[1] != $UserName and $row[4] != $Email)
 		{
-//			echo"Checking Data: "."$row[1]"."  "."$row[4]"."<br>";
+			echo"Checking Data: "."$row[1]"."  "."$row[4]"."<br>";
 			$Finaliza = "si";
 		}
 		else{
 			function error(){
 				echo "Username/Mail already in use. Try again with other Username/Mail";
-				//echo"<script>history.go(-1)</script>";
+				echo"<script>history.go(-1)</script>";
 			}
 			$Finaliza = "no";
 			break;
@@ -61,13 +65,13 @@ if($Pass == $Pass2 && !empty($Pass) && !empty($FirstName) && !empty($LastName) &
 		'{$_POST["Organization"]}')",
 		$Admin);
 		echo "<script>alert('Registration Successful!')</script>";
-		$IDquery=mysql_query("SELECT ID FROM user WHERE user=$user") or die (mysql_error());
+		$IDquery=mysql_query("SELECT ID FROM user WHERE username='$user'") or die (mysql_error());
 		$ID=mysql_fetch_array($IDquery);
 		header("Location:index.php?session=1&ID=".$ID[0]);
 	}
 	else{
 		echo "Username/Mail already in use. Try again with other Username/Mail";
-		//echo"<script>history.go(-1)</script>";
+		echo"<script>history.go(-1)</script>";
 	}
 }
 
