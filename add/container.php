@@ -1,6 +1,6 @@
 <?php
   if($user==""){
-    header("Location: http://10.43.29.69/GalacticGuardians/register.php");
+    header("Location: http://10.43.7.44//GalacticGuardians/register.php");
   }
 ?>
 <style type="text/css">
