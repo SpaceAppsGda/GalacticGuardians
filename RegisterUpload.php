@@ -15,6 +15,7 @@ $Phone = addslashes($_POST["Phone"]);
 $Country = addslashes($_POST["Country"]);
 $Occupation = addslashes($_POST["Occupation"]);
 $Organization = addslashes($_POST["Organization"]);
+//$Terms = addslashes($_POST["Terms"]);
 
 echo $FirstName."<br>";
 echo $LastName."<br>";
@@ -26,6 +27,12 @@ echo $Phone."<br>";
 echo $Country."<br>";
 echo $Occupation."<br>";
 echo $Organization."<br>";
+//echo $Terms."<br>";
+
+if(!isset($_POST['Terms'])){
+	echo"<script>alert('Please!! Accept the terms!!')</script>";
+	echo"<script>history.go(-1)</script>";
+}
 
 if($Pass == $Pass2 && !empty($Pass) && !empty($FirstName) && !empty($LastName) && !empty($UserName) && !empty($Email) && !empty($Phone) && !empty($Country) && !empty($Occupation) && !empty($Organization))	//valida contraseña, se sean iguales
 {
