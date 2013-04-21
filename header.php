@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="brand" href="http://localhost/GalacticGuardians/index.php">NEObserver</a>
+      <a class="brand" href="http://localhost/GalacticGuardians/index.php"><img src="http://10.43.7.44/GalacticGuardians/img/Logo_mini.png"></a>
       <div class="nav-collapse collapse">
          <form method="post" class="navbar-form pull-right">
             <?php 
@@ -35,14 +35,14 @@
             }
             else {
               
-              print '<p>Hola <a href="http://localhost/GalacticGuardians/profile/index.php?session=1&user='.$user.'"/>'.$user.'</a> <a href="index.php?session=0">Logout</a></p>';
+              print '<font color="#ffffff">Hola <a href="http://10.43.7.44//GalacticGuardians/profile/index.php?session=1&user='.$user.'"/>'.$user.'</a>! | <a href="index.php?session=0">Logout</a></font>';
             }
 
             ?>
           </form>
           <ul class="nav">
-              <li class="active"><a href=<?php print "http://localhost/GalacticGuardians/add/index.php?session=".$session."&user=".$user;?>>Add NEO</a></li>
-              <li class="active"><a href= "http://localhost/GalacticGuardians/register.php">Register</a></li>
+              <li class="active"><a href=<?php print "http://10.43.7.44/GalacticGuardians/add/index.php?session=".$session."&user=".$user;?>>Add NEO</a></li>
+              <li class="active"><a href= "http://10.43.7.44/GalacticGuardians/register.php">Register</a></li>
           </ul>
       </div><!--/.nav-collapse -->
     </div>

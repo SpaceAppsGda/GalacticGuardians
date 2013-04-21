@@ -34,6 +34,8 @@
 <div class="jumbotron">
   <h3>They are all around our planet!</h3>
   <p class="lead">Near Earth Objects </p>
+  <img src="http://10.43.7.44/GalacticGuardians/img/Logo_mini.png"/></br></br>
+
   <a class="btn btn-large btn-success" href="#">Get started today</a>
 </div>
 </div>
