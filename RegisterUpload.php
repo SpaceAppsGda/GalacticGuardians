@@ -42,7 +42,7 @@ if($Pass == $Pass2 && $Pass!= null)	//valida contraseña, se sean iguales
 			break;
 		}
 	}
-	echo "Registration Successful";
+	echo "Registration Successful!";
 	mysql_query("INSERT INTO user(UserName, FirstName, LastName, Email, Pass, Phone, Country, Occupation, Organization) 
 	VALUES (
 	'{$_POST["UserName"]}',
