@@ -1,7 +1,7 @@
 <?php
   include 'connect.php';
   $session=$_GET['session'];
-  $user=$_GET['user'];
+  $ID=$_GET['ID'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
