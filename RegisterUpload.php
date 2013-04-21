@@ -35,15 +35,17 @@ if($Pass == $Pass2)	//valida contraseña, se sean iguales
 	while($row=mysql_fetch_array($tabla)){
 		if ($row[1] != $UserName and $row[4] != $Email)
 		{
-			echo("Coneccion!");
-//			$NuevoUsuario = mysql_query("INSERT INTO user(UserName,FirstName,LastName,Email,Pass,Phone,Country,Occupation,Organization) VALUES ($UserName,$FirstName,$LastName,$Email,$Pass,$Phone,$Country,$Occupation,$Organization)", $Admin); 
-//			header("Location:index.php");
+			echo(".");
+
 		}
 		else{
 			echo "Existing Data";
 			break;
 		}
 	}
+	echo "Registration Successful";
+	$NuevoUsuario = mysql_query("INSERT INTO user(UserName,FirstName,LastName,Email,Pass,Phone,Country,Occupation,Organization) VALUES ($UserName,$FirstName,$LastName,$Email,$Pass,$Phone,$Country,$Occupation,$Organization)", $Admin); 		
+	header("Location:index.php");
 }
 else{
     echo "Passwords didn't match";
