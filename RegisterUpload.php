@@ -6,7 +6,7 @@
 //Upload data into database table 'User'
 //Obtain variables from Register page
 $FirstName = $_POST["FirstName"];
-echo ($FirstName)."\n";
+echo ($FirstName);
 $LastName = $_POST["LastName"];
 echo $LastName."\n";
 $UserName = $_POST["UserName"];
@@ -30,38 +30,26 @@ echo $Occupation."\n";
 
 if($Pass == $Pass2)	//valida contraseña, se sean iguales
 {
-	$Admin = mysqli_connect("10.43.7.44" , "GG" , "starlord" , "neo");
-	mysql_select_db("user", $Admin); 
-	$Datos = mysql_query("SELECT FirstName, LastName, UserName, Email FROM user", $Admin); 
+	$Admin = mysql_connect("10.43.7.44" , "GG" , "starlord");
+	$bdNEO = mysql_select_db("neo",$Admin)
+	$tabla = mysql_query("SELECT * FROM user");
+	//$row = mysql_parse($Admin,"SELECT FirstName, LastName, UserName, Email FROM user"); 
 
-	if ($row["FirstName"] != $FirstName and $row["LastName"] != $LastName and $row["UserName"] != $UserName and $row["Email"] != $Email)
-	{
-		?>
-		<script language="javascript">
-		alert("Coneccion!")
-		</script>
-        <?php
-		echo("Coneccion!");
-//		$NuevoUsuario = mysql_query("INSERT INTO user(UserName,FirstName,LastName,Email,Pass,Phone,Country,Occupation,Organization) VALUES ($UserName,$FirstName,$LastName,$Email,$Pass,$Phone,$Country,$Occupation,$Organization)", $Admin); 
-//		header("Location:index.php");
-		
-	}
-	
-	else
-	{
-		?>
-		<script language="javascript">
-		alert("Dato existente")
-		</script>
-        <?php
+	while($row=mysql_fetch_array($tabla)){
+		if ($row[1] != $UserName and $row[4] != $Email)
+		{
+			echo("Coneccion!");
+//			$NuevoUsuario = mysql_query("INSERT INTO user(UserName,FirstName,LastName,Email,Pass,Phone,Country,Occupation,Organization) VALUES ($UserName,$FirstName,$LastName,$Email,$Pass,$Phone,$Country,$Occupation,$Organization)", $Admin); 
+//			header("Location:index.php");
+		}
+		else{
+			echo "Existing Data";
+			break;
+		}
 	}
 }
-else if($Pass != $Pass2){
-	?>
-    <script language="javascript">
-	alert("DON'T Match the Passwords! Try Again!!")
-	</script>
-    <?php
+else{
+    echo "Passwords didn't match";
     }
 ?>
 </body> 
