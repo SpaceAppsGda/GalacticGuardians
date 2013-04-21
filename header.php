@@ -42,7 +42,15 @@
           </form>
           <ul class="nav">
               <li class="active"><a href=<?php print "http://10.43.7.44/GalacticGuardians/add/index.php?session=".$session."&user=".$user;?>>Add NEO</a></li>
-              <li class="active"><a href= "http://10.43.7.44/GalacticGuardians/register.php">Register</a></li>
+              <?php
+              if($session!=1){
+                print '<li class="active"><a href= "http://10.43.7.44/GalacticGuardians/register.php">Register</a></li>';
+              }
+              else {
+                print '<li class="active"><a href= "http://10.43.7.44/GalacticGuardians/profile/index.php?session=1&user='.$user.'">Profile</a></li>';
+              }
+              
+              ?>
           </ul>
       </div><!--/.nav-collapse -->
     </div>
